@@ -1,0 +1,126 @@
+\doxysection{Entity Class Reference}
+\hypertarget{class_entity}{}\label{class_entity}\index{Entity@{Entity}}
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_entity_a113d1bc2ad6b416f014b7ca60e056204}\label{class_entity_a113d1bc2ad6b416f014b7ca60e056204} 
+enum class {\bfseries Entity\+Types} \{ {\bfseries WORKSPACE}
+, {\bfseries OBJECT}
+, {\bfseries GENERIC}
+, {\bfseries TILESET}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_entity_a6b9ffbda93c3e5260d8cedbabb3e0030}\label{class_entity_a6b9ffbda93c3e5260d8cedbabb3e0030} 
+{\bfseries Entity} (\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ position)
+\item 
+\Hypertarget{class_entity_ae30a0c05b1960fd8839d188b2b5bc0a3}\label{class_entity_ae30a0c05b1960fd8839d188b2b5bc0a3} 
+virtual void {\bfseries Create} ()
+\begin{DoxyCompactList}\small\item\em Initializes the entity. Called when added to workspace. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a7230c096a32eda1994364c3086094593}\label{class_entity_a7230c096a32eda1994364c3086094593} 
+virtual void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the entity. Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_aac080ccf56ea1a0208363106b0f4dc65}{Draw}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Draws the entity on the screen. Called every frame. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a35ff3aec5d56fd44ca883b7d3baf40c7}\label{class_entity_a35ff3aec5d56fd44ca883b7d3baf40c7} 
+\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ {\bfseries Get\+Position} ()
+\item 
+\Hypertarget{class_entity_aae4e003f9b380a9abbe10d4d921388db}\label{class_entity_aae4e003f9b380a9abbe10d4d921388db} 
+void {\bfseries Set\+Position} (const \mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ \&position)
+\item 
+\Hypertarget{class_entity_a42347eb9a13c3ac0880c7f7334c9c686}\label{class_entity_a42347eb9a13c3ac0880c7f7334c9c686} 
+uint8\+\_\+t {\bfseries Get\+Group} () const
+\item 
+\Hypertarget{class_entity_a7a73c0ff42d58bb181015ccf03603677}\label{class_entity_a7a73c0ff42d58bb181015ccf03603677} 
+void {\bfseries Set\+Group} (uint8\+\_\+t \+\_\+group)
+\item 
+\Hypertarget{class_entity_a45edc599507959405592e4fcfb77eee1}\label{class_entity_a45edc599507959405592e4fcfb77eee1} 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Mask} () const
+\item 
+\Hypertarget{class_entity_a9e15fe10a5025d8bf7699622cac1e928}\label{class_entity_a9e15fe10a5025d8bf7699622cac1e928} 
+void {\bfseries Set\+Mask} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}\+\_\+shape)
+\item 
+\Hypertarget{class_entity_a247f6302422dc2535ade2fef063928c7}\label{class_entity_a247f6302422dc2535ade2fef063928c7} 
+int {\bfseries Get\+FLAGS} () const
+\item 
+\Hypertarget{class_entity_a03ea7977dbc1a7d198fdb844b3608e45}\label{class_entity_a03ea7977dbc1a7d198fdb844b3608e45} 
+int {\bfseries Get\+Type} () const
+\item 
+\Hypertarget{class_entity_a47fbe3b6a995e4d23da14338a5ff9020}\label{class_entity_a47fbe3b6a995e4d23da14338a5ff9020} 
+void {\bfseries Set\+Type} (int type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_entity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_entity_a6b42d5a247679761e39c05ac22f097ca}{Find\+With\+Group}} (uint8\+\_\+t \+\_\+group)
+\begin{DoxyCompactList}\small\item\em Find an entity with a specific group. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_entity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_entity_a7d349171b14309ae957b67bd4976e5c0}{Find\+By\+Type}} (int \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Find an entity with a specific type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_entity_aac080ccf56ea1a0208363106b0f4dc65}\label{class_entity_aac080ccf56ea1a0208363106b0f4dc65} 
+\index{Entity@{Entity}!Draw@{Draw}}
+\index{Draw@{Draw}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void Entity\+::\+Draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Draws the entity on the screen. Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The SDL renderer to use for drawing \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_a7d349171b14309ae957b67bd4976e5c0}\label{class_entity_a7d349171b14309ae957b67bd4976e5c0} 
+\index{Entity@{Entity}!FindByType@{FindByType}}
+\index{FindByType@{FindByType}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{FindByType()}{FindByType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}} \texorpdfstring{$\ast$}{*} Entity\+::\+Find\+By\+Type (\begin{DoxyParamCaption}\item[{int}]{\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Find an entity with a specific type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & The type to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity with the specified type, or nullptr if the entity wasn\textquotesingle{}t found 
+\end{DoxyReturn}
+\Hypertarget{class_entity_a6b42d5a247679761e39c05ac22f097ca}\label{class_entity_a6b42d5a247679761e39c05ac22f097ca} 
+\index{Entity@{Entity}!FindWithGroup@{FindWithGroup}}
+\index{FindWithGroup@{FindWithGroup}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{FindWithGroup()}{FindWithGroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}} \texorpdfstring{$\ast$}{*} Entity\+::\+Find\+With\+Group (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Find an entity with a specific group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+group} & The group to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entity with the specified group, or nullptr if the entity wasn\textquotesingle{}t found 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Entity.\+hpp\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Entity.\+cpp\end{DoxyCompactItemize}

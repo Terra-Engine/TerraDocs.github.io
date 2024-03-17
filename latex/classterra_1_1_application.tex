@@ -1,0 +1,43 @@
+\doxysection{terra\+::Application Class Reference}
+\hypertarget{classterra_1_1_application}{}\label{classterra_1_1_application}\index{terra::Application@{terra::Application}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_application_a3f38ba6208a31cbd4f395429408d7a26}\label{classterra_1_1_application_a3f38ba6208a31cbd4f395429408d7a26} 
+{\bfseries Application} (\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ int $>$ window\+Size, const char \texorpdfstring{$\ast$}{*}window\+Title)
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classterra_1_1_application_a9d48bb2492c12f32653301be00d7b460}{Create\+Renderer}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window)
+\begin{DoxyCompactList}\small\item\em Creates a SDL\+\_\+\+Renderer for the given SDL\+\_\+\+Window. \end{DoxyCompactList}\item 
+\Hypertarget{classterra_1_1_application_a6f64a773d953d985f89fad6b9c8ef358}\label{classterra_1_1_application_a6f64a773d953d985f89fad6b9c8ef358} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classterra_1_1_window}{Window}} $>$ \& {\bfseries Get\+Window} ()
+\item 
+\Hypertarget{classterra_1_1_application_aeaaa81005932c5d0ff85114ef2872007}\label{classterra_1_1_application_aeaaa81005932c5d0ff85114ef2872007} 
+\mbox{\hyperlink{classterra_1_1_game_loop}{Game\+Loop}} \& {\bfseries Get\+Game\+Loop} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classterra_1_1_application_a9d48bb2492c12f32653301be00d7b460}\label{classterra_1_1_application_a9d48bb2492c12f32653301be00d7b460} 
+\index{terra::Application@{terra::Application}!CreateRenderer@{CreateRenderer}}
+\index{CreateRenderer@{CreateRenderer}!terra::Application@{terra::Application}}
+\doxysubsubsection{\texorpdfstring{CreateRenderer()}{CreateRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Application\+::\+Create\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
+
+
+
+Creates a SDL\+\_\+\+Renderer for the given SDL\+\_\+\+Window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the SDL\+\_\+\+Window to create the renderer for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} a pointer to the created SDL\+\_\+\+Renderer, or nullptr on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Application.\+hpp\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Application.\+cpp\end{DoxyCompactItemize}

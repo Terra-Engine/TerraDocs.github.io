@@ -1,0 +1,78 @@
+\doxysection{terra\+::Collision\+Rectangle Class Reference}
+\hypertarget{classterra_1_1_collision_rectangle}{}\label{classterra_1_1_collision_rectangle}\index{terra::CollisionRectangle@{terra::CollisionRectangle}}
+Inheritance diagram for terra\+::Collision\+Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classterra_1_1_collision_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_collision_rectangle_a01a40efafdf984b26d68a7b4796f2428}\label{classterra_1_1_collision_rectangle_a01a40efafdf984b26d68a7b4796f2428} 
+{\bfseries Collision\+Rectangle} (\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ \+\_\+position, int \+\_\+width, int \+\_\+height)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_collision_rectangle_a280fbe1fdbb81d95fdc232be327a8692}{Is\+Colliding}} (const \mbox{\hyperlink{classterra_1_1_collision_rectangle}{Collision\+Rectangle}} \texorpdfstring{$\ast$}{*}other) const
+\begin{DoxyCompactList}\small\item\em Checks for collision between two rectangles. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classterra_1_1_collision_rectangle_a14b4330c68138e81afadce7acace40eb}{Is\+Colliding}} (const \mbox{\hyperlink{classterra_1_1_collision_circle}{Collision\+Circle}} \texorpdfstring{$\ast$}{*}other) const
+\begin{DoxyCompactList}\small\item\em Checks for collision between a rectangle and a circle. \end{DoxyCompactList}\item 
+\Hypertarget{classterra_1_1_collision_rectangle_abea63defecb41e2f6226fe3b5942bc60}\label{classterra_1_1_collision_rectangle_abea63defecb41e2f6226fe3b5942bc60} 
+\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ {\bfseries Get\+Position} () const
+\item 
+\Hypertarget{classterra_1_1_collision_rectangle_ac26e90fe0e87e4acce5c5804a8eee60d}\label{classterra_1_1_collision_rectangle_ac26e90fe0e87e4acce5c5804a8eee60d} 
+void {\bfseries Set\+Position} (const \mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ \&\+\_\+position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_collision_rectangle_af07e914f64afd6ee72029614ca0170c6}\label{classterra_1_1_collision_rectangle_af07e914f64afd6ee72029614ca0170c6} 
+int {\bfseries width}
+\item 
+\Hypertarget{classterra_1_1_collision_rectangle_ab5043a3be123f7b36fea105c5df73f92}\label{classterra_1_1_collision_rectangle_ab5043a3be123f7b36fea105c5df73f92} 
+int {\bfseries height}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classterra_1_1_collision_rectangle_a14b4330c68138e81afadce7acace40eb}\label{classterra_1_1_collision_rectangle_a14b4330c68138e81afadce7acace40eb} 
+\index{terra::CollisionRectangle@{terra::CollisionRectangle}!IsColliding@{IsColliding}}
+\index{IsColliding@{IsColliding}!terra::CollisionRectangle@{terra::CollisionRectangle}}
+\doxysubsubsection{\texorpdfstring{IsColliding()}{IsColliding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Collision\+Rectangle\+::\+Is\+Colliding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterra_1_1_collision_circle}{Collision\+Circle}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Checks for collision between a rectangle and a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the circle to check collision with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rectangle and circle collide, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_collision_rectangle_a280fbe1fdbb81d95fdc232be327a8692}\label{classterra_1_1_collision_rectangle_a280fbe1fdbb81d95fdc232be327a8692} 
+\index{terra::CollisionRectangle@{terra::CollisionRectangle}!IsColliding@{IsColliding}}
+\index{IsColliding@{IsColliding}!terra::CollisionRectangle@{terra::CollisionRectangle}}
+\doxysubsubsection{\texorpdfstring{IsColliding()}{IsColliding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Collision\+Rectangle\+::\+Is\+Colliding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterra_1_1_collision_rectangle}{Collision\+Rectangle}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Checks for collision between two rectangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other rectangle to check collision with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rectangles collide, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Collision\+Rectangle.\+hpp\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Collision\+Rectangle.\+cpp\end{DoxyCompactItemize}

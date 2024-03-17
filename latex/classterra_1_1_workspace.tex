@@ -1,0 +1,103 @@
+\doxysection{terra\+::Workspace Class Reference}
+\hypertarget{classterra_1_1_workspace}{}\label{classterra_1_1_workspace}\index{terra::Workspace@{terra::Workspace}}
+Inheritance diagram for terra\+::Workspace\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classterra_1_1_workspace}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_workspace_a07b3af0927558e415b40df234bebfff1}\label{classterra_1_1_workspace_a07b3af0927558e415b40df234bebfff1} 
+{\bfseries Workspace} (\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ position)
+\item 
+\Hypertarget{classterra_1_1_workspace_a2925fb9eaea2d245d65611638dbc8009}\label{classterra_1_1_workspace_a2925fb9eaea2d245d65611638dbc8009} 
+std\+::vector$<$ \mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries Get\+Entity\+List} () const
+\item 
+void \mbox{\hyperlink{classterra_1_1_workspace_a20cf4e0360252da4038138db4958a5bb}{Add\+Entity}} (\mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\item 
+void \mbox{\hyperlink{classterra_1_1_workspace_a3db2354c9def3c38d0046dea48e1c46a}{Remove\+Entity}} (\mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classterra_1_1_entity}{terra\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Entity} (\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ position)
+\item 
+virtual void {\bfseries Create} ()
+\begin{DoxyCompactList}\small\item\em Initializes the entity. Called when added to workspace. \end{DoxyCompactList}\item 
+virtual void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the entity. Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classterra_1_1_entity_a0a3d959e0585a10f0be434ecbd1702cf}{Draw}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Draws the entity on the screen. Called every frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ {\bfseries Get\+Position} ()
+\item 
+void {\bfseries Set\+Position} (const \mbox{\hyperlink{classterra_1_1_vector2}{terra\+::\+Vector2}}$<$ float $>$ \&position)
+\item 
+uint8\+\_\+t {\bfseries Get\+Group} () const
+\item 
+void {\bfseries Set\+Group} (uint8\+\_\+t \+\_\+group)
+\item 
+\mbox{\hyperlink{classterra_1_1_shape}{Shape}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Mask} () const
+\item 
+void {\bfseries Set\+Mask} (\mbox{\hyperlink{classterra_1_1_shape}{Shape}} \texorpdfstring{$\ast$}{*}\+\_\+shape)
+\item 
+int {\bfseries Get\+FLAGS} () const
+\item 
+int {\bfseries Get\+Type} () const
+\item 
+void {\bfseries Set\+Type} (int type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classterra_1_1_entity}{terra\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_entity_ab3822bffd0d9b43d9410f28c7eacbd50}\label{classterra_1_1_entity_ab3822bffd0d9b43d9410f28c7eacbd50} 
+enum class {\bfseries Entity\+Types} \{ {\bfseries WORKSPACE}
+, {\bfseries OBJECT}
+, {\bfseries GENERIC}
+, {\bfseries TILESET}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classterra_1_1_entity}{terra\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classterra_1_1_entity_a6b42d5a247679761e39c05ac22f097ca}{Find\+With\+Group}} (uint8\+\_\+t \+\_\+group)
+\begin{DoxyCompactList}\small\item\em Find an entity with a specific group. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classterra_1_1_entity_a7d349171b14309ae957b67bd4976e5c0}{Find\+By\+Type}} (int \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Find an entity with a specific type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classterra_1_1_workspace_a20cf4e0360252da4038138db4958a5bb}\label{classterra_1_1_workspace_a20cf4e0360252da4038138db4958a5bb} 
+\index{terra::Workspace@{terra::Workspace}!AddEntity@{AddEntity}}
+\index{AddEntity@{AddEntity}!terra::Workspace@{terra::Workspace}}
+\doxysubsubsection{\texorpdfstring{AddEntity()}{AddEntity()}}
+{\footnotesize\ttfamily void Workspace\+::\+Add\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}}]{entity }\end{DoxyParamCaption})}
+
+Adds an entity to the workspace
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to add \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classterra_1_1_workspace_a3db2354c9def3c38d0046dea48e1c46a}\label{classterra_1_1_workspace_a3db2354c9def3c38d0046dea48e1c46a} 
+\index{terra::Workspace@{terra::Workspace}!RemoveEntity@{RemoveEntity}}
+\index{RemoveEntity@{RemoveEntity}!terra::Workspace@{terra::Workspace}}
+\doxysubsubsection{\texorpdfstring{RemoveEntity()}{RemoveEntity()}}
+{\footnotesize\ttfamily void Workspace\+::\+Remove\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterra_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}}]{entity }\end{DoxyParamCaption})}
+
+Removes an entity from the workspace
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to remove \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Workspace.\+hpp\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Workspace.\+cpp\end{DoxyCompactItemize}

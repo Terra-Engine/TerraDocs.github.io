@@ -1,0 +1,26 @@
+\doxysection{Collision\+Ray.\+hpp}
+\hypertarget{_collision_ray_8hpp_source}{}\label{_collision_ray_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionRay.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionRay.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLLISION\_RAY\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COLLISION\_RAY\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Vector2.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CollisionCircle.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CollisionRectangle.hpp"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_collision_ray}{CollisionRay}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_ray}{CollisionRay}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ \_position)\ :\ m\_position(\_position)\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_ray}{\string~CollisionRay}}()\ \{\}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsColliding(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_rectangle}{CollisionRectangle}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsColliding(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_circle}{CollisionCircle}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ m\_position;}
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ \}\ \textcolor{comment}{//\ namespace\ terra}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

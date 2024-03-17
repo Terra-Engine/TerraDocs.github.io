@@ -1,0 +1,32 @@
+\doxysection{Collision\+Polygon.\+hpp}
+\hypertarget{_collision_polygon_8hpp_source}{}\label{_collision_polygon_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionPolygon.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionPolygon.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLLISION\_POLYGON\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COLLISION\_POLYGON\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Shape.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Vector2.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CollisionCircle.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}CollisionRectangle.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_collision_polygon}{CollisionPolygon}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classterra_1_1_shape}{Shape}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::vector<terra::Vector2<float>>\ vertices;\ \textcolor{comment}{//\ Vertices\ of\ the\ polygon}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_polygon}{CollisionPolygon}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ \_position,\ \textcolor{keyword}{const}\ std::vector<\mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}>\&\ \_vertices);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_polygon}{\string~CollisionPolygon}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsColliding(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_circle}{CollisionCircle}}*\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsColliding(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_rectangle}{CollisionRectangle}}*\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsColliding(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_polygon}{CollisionPolygon}}*\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ You\ might\ need\ additional\ methods\ for\ manipulating\ vertices,\ getting\ edges,\ etc.}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ m\_position;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ CheckLineIntersection(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ p1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ p2,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ p3,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ p4);}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//COLLISION\_POLYGON\_HPP}}
+
+\end{DoxyCode}

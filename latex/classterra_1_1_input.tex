@@ -1,0 +1,128 @@
+\doxysection{terra\+::Input Class Reference}
+\hypertarget{classterra_1_1_input}{}\label{classterra_1_1_input}\index{terra::Input@{terra::Input}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterra_1_1_input_af80dcfde6dbfe39bf3bc0345c75595ce}\label{classterra_1_1_input_af80dcfde6dbfe39bf3bc0345c75595ce} 
+void {\bfseries Update} ()
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_ac3e37bd7d850bae22f6e87a1e9d91f4e}{Is\+Key\+Down}} (SDL\+\_\+\+Keycode key)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_a2c7fdf3303b248b84804963f09b065e6}{Is\+Key\+Pressed}} (SDL\+\_\+\+Keycode key)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_afe3e320447843901d1b6f29e10a6b076}{Is\+Key\+Released}} (SDL\+\_\+\+Keycode key)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_ac1595bb99ac38a0604363a9e10ceea88}{Is\+Controller\+Button\+Down}} (SDL\+\_\+\+Game\+Controller\+Button button)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_af303150b296570c5f567a88f8474b047}{Is\+Controller\+Button\+Pressed}} (SDL\+\_\+\+Game\+Controller\+Button button)
+\item 
+bool \mbox{\hyperlink{classterra_1_1_input_accfb96393d1c6c1faaec7d3046cc9e83}{Is\+Controller\+Button\+Released}} (SDL\+\_\+\+Game\+Controller\+Button button)
+\item 
+\Hypertarget{classterra_1_1_input_a629c583532e76a5b3e0b2b9d53c55aff}\label{classterra_1_1_input_a629c583532e76a5b3e0b2b9d53c55aff} 
+float {\bfseries Get\+Controller\+Axis} (SDL\+\_\+\+Game\+Controller\+Axis axis)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classterra_1_1_input_ac1595bb99ac38a0604363a9e10ceea88}\label{classterra_1_1_input_ac1595bb99ac38a0604363a9e10ceea88} 
+\index{terra::Input@{terra::Input}!IsControllerButtonDown@{IsControllerButtonDown}}
+\index{IsControllerButtonDown@{IsControllerButtonDown}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsControllerButtonDown()}{IsControllerButtonDown()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Controller\+Button\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Game\+Controller\+Button}]{button }\end{DoxyParamCaption})}
+
+Checks if a specific game controller button is currently being held down.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if being held down, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_input_af303150b296570c5f567a88f8474b047}\label{classterra_1_1_input_af303150b296570c5f567a88f8474b047} 
+\index{terra::Input@{terra::Input}!IsControllerButtonPressed@{IsControllerButtonPressed}}
+\index{IsControllerButtonPressed@{IsControllerButtonPressed}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsControllerButtonPressed()}{IsControllerButtonPressed()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Controller\+Button\+Pressed (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Game\+Controller\+Button}]{button }\end{DoxyParamCaption})}
+
+Checks if a specific game controller button was pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if pressed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_input_accfb96393d1c6c1faaec7d3046cc9e83}\label{classterra_1_1_input_accfb96393d1c6c1faaec7d3046cc9e83} 
+\index{terra::Input@{terra::Input}!IsControllerButtonReleased@{IsControllerButtonReleased}}
+\index{IsControllerButtonReleased@{IsControllerButtonReleased}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsControllerButtonReleased()}{IsControllerButtonReleased()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Controller\+Button\+Released (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Game\+Controller\+Button}]{button }\end{DoxyParamCaption})}
+
+Checks if a specific game controller button was released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if released, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_input_ac3e37bd7d850bae22f6e87a1e9d91f4e}\label{classterra_1_1_input_ac3e37bd7d850bae22f6e87a1e9d91f4e} 
+\index{terra::Input@{terra::Input}!IsKeyDown@{IsKeyDown}}
+\index{IsKeyDown@{IsKeyDown}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyDown()}{IsKeyDown()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Key\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Keycode}]{key }\end{DoxyParamCaption})}
+
+Checks if a specific key is currently being held down.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if being held down, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_input_a2c7fdf3303b248b84804963f09b065e6}\label{classterra_1_1_input_a2c7fdf3303b248b84804963f09b065e6} 
+\index{terra::Input@{terra::Input}!IsKeyPressed@{IsKeyPressed}}
+\index{IsKeyPressed@{IsKeyPressed}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyPressed()}{IsKeyPressed()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Keycode}]{key }\end{DoxyParamCaption})}
+
+Checks if a specific key was pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if pressed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classterra_1_1_input_afe3e320447843901d1b6f29e10a6b076}\label{classterra_1_1_input_afe3e320447843901d1b6f29e10a6b076} 
+\index{terra::Input@{terra::Input}!IsKeyReleased@{IsKeyReleased}}
+\index{IsKeyReleased@{IsKeyReleased}!terra::Input@{terra::Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyReleased()}{IsKeyReleased()}}
+{\footnotesize\ttfamily bool Input\+::\+Is\+Key\+Released (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Keycode}]{key }\end{DoxyParamCaption})}
+
+Checks if a specific key was released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if released, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Input.\+hpp\item 
+C\+:/\+Users/thedi/\+Dev/\+Projetos/\+Terra\+Project/\+Terra\+Runtime/\+Terra\+Runtime/Input.\+cpp\end{DoxyCompactItemize}

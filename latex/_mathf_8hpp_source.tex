@@ -1,0 +1,21 @@
+\doxysection{Mathf.\+hpp}
+\hypertarget{_mathf_8hpp_source}{}\label{_mathf_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Mathf.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Mathf.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MATHF\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MATHF\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00006\ \ \ \ \ T\ approach(T\ current,\ T\ target,\ T\ step)\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\ <\ target)}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::min<T>(current\ +\ step,\ target);}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (current\ >\ target)}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::max<T>(current\ -\/\ step,\ target);}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ target;}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ \}\ \textcolor{comment}{//\ namespace\ terra}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

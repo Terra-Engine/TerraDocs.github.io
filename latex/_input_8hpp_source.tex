@@ -1,0 +1,38 @@
+\doxysection{Input.\+hpp}
+\hypertarget{_input_8hpp_source}{}\label{_input_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Input.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Input.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INPUT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INPUT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_input}{Input}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_input}{Input}}();}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_input}{\string~Input}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Update();}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//TODO:\ Add\ Get\ key\ methods}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_ac3e37bd7d850bae22f6e87a1e9d91f4e}{IsKeyDown}}(SDL\_Keycode\ key);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_a2c7fdf3303b248b84804963f09b065e6}{IsKeyPressed}}(SDL\_Keycode\ key);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_afe3e320447843901d1b6f29e10a6b076}{IsKeyReleased}}(SDL\_Keycode\ key);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_ac1595bb99ac38a0604363a9e10ceea88}{IsControllerButtonDown}}(SDL\_GameControllerButton\ button);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_af303150b296570c5f567a88f8474b047}{IsControllerButtonPressed}}(SDL\_GameControllerButton\ button);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_input_accfb96393d1c6c1faaec7d3046cc9e83}{IsControllerButtonReleased}}(SDL\_GameControllerButton\ button);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{comment}{//TODO:\ Add\ get\ horizontal\ and\ vertical\ axis}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ GetControllerAxis(SDL\_GameControllerAxis\ axis);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ Uint8*\ m\_keyboardState;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ Uint8\ m\_prevKeyboardState[SDL\_NUM\_SCANCODES];}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ SDL\_GameController*\ m\_controller;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ Sint16\ m\_controllerAxis[SDL\_CONTROLLER\_AXIS\_MAX];}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ Sint16\ m\_prevControllerAxis[SDL\_CONTROLLER\_AXIS\_MAX];}
+\DoxyCodeLine{00066\ \ \ \ \ \};}
+\DoxyCodeLine{00067\ \}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INPUT\_HPP}}
+
+\end{DoxyCode}

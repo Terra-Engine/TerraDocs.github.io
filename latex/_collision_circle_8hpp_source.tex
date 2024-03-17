@@ -1,0 +1,36 @@
+\doxysection{Collision\+Circle.\+hpp}
+\hypertarget{_collision_circle_8hpp_source}{}\label{_collision_circle_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionCircle.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/CollisionCircle.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLLISION\_CIRCLE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COLLISION\_CIRCLE\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Shape.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}CollisionRectangle.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL\_render.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Vector2.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }CollisionRectangle;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_collision_circle}{CollisionCircle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classterra_1_1_shape}{Shape}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_circle}{CollisionCircle}}(\mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ \_position,\ \textcolor{keywordtype}{float}\ \_radius);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_collision_circle}{\string~CollisionCircle}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_collision_circle_a21a20763e997a3b257b835ab42d3ca1a}{IsColliding}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_circle}{CollisionCircle}}*\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classterra_1_1_collision_circle_a21a20763e997a3b257b835ab42d3ca1a}{IsColliding}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_collision_rectangle}{CollisionRectangle}}*\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ GetPosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SetPosition(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\&\ \_position);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ GetRadius()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SetRadius(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ radius);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ m\_position;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ m\_radius;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ DrawCircle(SDL\_Renderer\ *surface,\ \textcolor{keywordtype}{int}\ n\_cx,\ \textcolor{keywordtype}{int}\ n\_cy,\ \textcolor{keywordtype}{float}\ radius,\ Uint8\ r,\ Uint8\ g,\ Uint8\ b,\ Uint8\ a);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ DrawPixel(SDL\_Renderer\ *rend,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ Uint8\ r,\ Uint8\ g,\ Uint8\ b,\ Uint8\ a);}
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ \}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COLLISION\_CIRCLE\_HPP}}
+
+\end{DoxyCode}

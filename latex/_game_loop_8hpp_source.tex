@@ -1,0 +1,36 @@
+\doxysection{Game\+Loop.\+hpp}
+\hypertarget{_game_loop_8hpp_source}{}\label{_game_loop_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/GameLoop.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/GameLoop.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAME\_LOOP\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAME\_LOOP\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL\_image.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL\_render.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL\_surface.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Workspace.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}\&\ \mbox{\hyperlink{classterra_1_1_game_loop_ab643073e78eba6685d00e636aa383aeb}{GetInstance}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Update();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SetRenderer(SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ GetRenderer()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}\&\ obj)\ =\ \textcolor{keyword}{delete};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_workspace}{Workspace}}*\ GetWorkspace()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_game_loop}{\string~GameLoop}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_workspace}{Workspace}}*\ m\_workspace;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Private\ static\ instance\ variable}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classterra_1_1_game_loop}{GameLoop}}*\ instance;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ m\_renderer;}
+\DoxyCodeLine{00033\ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \}\ \textcolor{comment}{//\ namespace\ terra}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAME\_LOOP\_HPP}}
+
+\end{DoxyCode}

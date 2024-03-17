@@ -1,0 +1,26 @@
+\doxysection{Workspace.\+hpp}
+\hypertarget{_workspace_8hpp_source}{}\label{_workspace_8hpp_source}\index{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Workspace.hpp@{C:/Users/thedi/Dev/Projetos/TerraProject/TerraRuntime/TerraRuntime/Workspace.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WORKSPACE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WORKSPACE\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }terra\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterra_1_1_workspace}{Workspace}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classterra_1_1_entity}{Entity}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_workspace}{Workspace}}(\mbox{\hyperlink{classterra_1_1_vector2}{terra::Vector2<float>}}\ position)\ :\ \mbox{\hyperlink{classterra_1_1_entity}{Entity}}(position)\ \{\}}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterra_1_1_workspace}{\string~Workspace}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ std::vector<Entity*>\ GetEntityList()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterra_1_1_workspace_a20cf4e0360252da4038138db4958a5bb}{AddEntity}}(\mbox{\hyperlink{classterra_1_1_entity}{Entity}}*\ entity);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterra_1_1_workspace_a3db2354c9def3c38d0046dea48e1c46a}{RemoveEntity}}(\mbox{\hyperlink{classterra_1_1_entity}{Entity}}*\ entity);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::vector<Entity*>\ m\_entityList;}
+\DoxyCodeLine{00028\ \ \ \ \ \};}
+\DoxyCodeLine{00029\ \}\ \textcolor{comment}{//\ namespace\ terra}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WORKSPACE\_HPP}}
+
+\end{DoxyCode}
